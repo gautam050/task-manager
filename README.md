@@ -50,59 +50,6 @@ A full-stack task management application with **role-based access control**, **J
 
 ---
 
-## 📁 Folder Structure
-
-```
-task-manager/
-├── server/                     # Backend (Node + Express)
-│   ├── config/
-│   │   └── db.js               # MongoDB connection
-│   ├── controllers/
-│   │   ├── auth.controller.js  # Register, Login, Me
-│   │   ├── task.controller.js  # Task CRUD
-│   │   └── admin.controller.js # Admin operations
-│   ├── middleware/
-│   │   └── auth.middleware.js  # verifyToken, isAdmin
-│   ├── models/
-│   │   ├── User.js             # User schema
-│   │   ├── Task.js             # Task schema
-│   │   └── ActivityLog.js      # Activity log schema
-│   ├── routes/
-│   │   ├── auth.routes.js
-│   │   ├── task.routes.js
-│   │   └── admin.routes.js
-│   ├── utils/
-│   │   ├── activityLogger.js   # Reusable log helper
-│   │   └── generateToken.js    # JWT generator
-│   ├── .env                    # Environment variables (not committed)
-│   └── index.js                # Entry point
-│
-└── client/                     # Frontend (React + Vite)
-    └── src/
-        ├── api/
-        │   └── axios.js            # Axios instance + interceptors
-        ├── components/
-        │   ├── Navbar.jsx          # Role-based navigation bar
-        │   └── ProtectedRoute.jsx  # Route guard component
-        ├── context/
-        │   └── AuthContext.jsx     # Global auth state
-        ├── pages/
-        │   ├── Login.jsx
-        │   ├── Register.jsx
-        │   ├── UserDashboard.jsx
-        │   ├── MyTasks.jsx
-        │   └── admin/
-        │       ├── AdminDashboard.jsx
-        │       ├── UserManagement.jsx
-        │       ├── TaskMonitor.jsx
-        │       └── ActivityLogs.jsx
-        ├── App.jsx
-        ├── main.jsx
-        └── index.css
-```
-
----
-
 ## ⚙️ Getting Started
 
 ### Prerequisites
