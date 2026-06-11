@@ -4,20 +4,6 @@ A full-stack task management application with **role-based access control**, **J
 
 ---
 
-## 🚀 Live Demo
-
-> Coming soon — deploy link will be added here
-
----
-
-## 📸 Screenshots
-
-| Login Page | User Dashboard | Admin Dashboard |
-|---|---|---|
-| ![Login](#) | ![Dashboard](#) | ![Admin](#) |
-
----
-
 ## ✨ Features
 
 ### 👤 User
