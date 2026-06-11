@@ -151,50 +151,6 @@ Backend:  http://localhost:5000
 
 ---
 
-## 🔐 API Endpoints
-
-### Auth Routes
-| Method | Endpoint | Access | Description |
-|---|---|---|---|
-| POST | `/api/auth/register` | Public | Register new user |
-| POST | `/api/auth/login` | Public | Login and get token |
-| GET | `/api/auth/me` | Protected | Get current user |
-
-### Task Routes
-| Method | Endpoint | Access | Description |
-|---|---|---|---|
-| GET | `/api/tasks` | User | Get own tasks |
-| POST | `/api/tasks` | User | Create a task |
-| PUT | `/api/tasks/:id` | User | Update own task |
-| DELETE | `/api/tasks/:id` | User | Delete own task |
-
-### Admin Routes
-| Method | Endpoint | Access | Description |
-|---|---|---|---|
-| GET | `/api/admin/users` | Admin | Get all users |
-| PATCH | `/api/admin/users/:id/status` | Admin | Update user status |
-| DELETE | `/api/admin/users/:id` | Admin | Delete a user |
-| GET | `/api/admin/tasks` | Admin | Get all tasks |
-| DELETE | `/api/admin/tasks/:id` | Admin | Delete any task |
-| GET | `/api/admin/logs` | Admin | Get activity logs |
-
----
-
-## 🔑 Role-Based Access Control
-
-| Feature | User | Admin |
-|---|---|---|
-| Register / Login | ✅ | ✅ |
-| Create own tasks | ✅ | ✅ |
-| View own tasks | ✅ | ✅ |
-| Update own tasks | ✅ | ✅ |
-| Delete own tasks | ✅ | ✅ |
-| View all users | ❌ | ✅ |
-| Manage user status | ❌ | ✅ |
-| Delete any user | ❌ | ✅ |
-| View all tasks | ❌ | ✅ |
-| Delete any task | ❌ | ✅ |
-| View activity logs | ❌ | ✅ |
 
 
 ## 🧪 Test Credentials
@@ -225,14 +181,6 @@ User Account:
 - [ ] Docker containerization
 - [ ] Deploy to cloud (Vercel + Railway + MongoDB Atlas)
 - [ ] Real-time notifications with Socket.io
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 
 ---
 
